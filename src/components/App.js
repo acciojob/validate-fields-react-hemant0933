@@ -25,7 +25,7 @@ const App = () => {
           <label for="password">Password: </label>
           <input type="password" placeholder="password" onChange = {(e)=>setPassword(e.target.value)}/><br/>
           {(name === "" || password === "") && 
-            <p style={{color:'red'}}>{error}</p>}
+            <p id="errorMessage" style={{color:'red'}}>{error}</p>}
           <button  onClick={handleSubmit}>Submit</button>
         </form>
 
