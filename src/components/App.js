@@ -13,7 +13,7 @@ const App = () => {
     if(name && password){
       setError("");
     }else{
-      setError("Both username and password are required");
+      setError("Both username and password are required.");
     }
   }
 
